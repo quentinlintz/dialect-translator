@@ -30,7 +30,9 @@ export default function TranslatorPage() {
     var input = englishText
 
     for (const [english, dialect] of translationMap.entries()) {
-      input = input.replaceAll(english, dialect)
+      let esc = english.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+      let reg = new RegExp(esc, 'ig');
+      input = input.replaceAll(reg, dialect)
     }
 
     setTranslatedText(input)
