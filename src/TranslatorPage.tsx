@@ -73,9 +73,9 @@ export default function TranslatorPage() {
         <Space />
         {
           translatedText ?
-          <Container align='center'>
-            <Title size='h3'>Translated</Title>
-            <Text>{translatedText}</Text>
+          <Container>
+            <Title align='center' size='h3'>Translated</Title>
+            <Text align='center'>{translatedText}</Text>
           </Container> : null
         }
       </Stack>
