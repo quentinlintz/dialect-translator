@@ -39,10 +39,10 @@ export default function TranslatorPage() {
   return (
     <Center>
       <Stack spacing='lg' style={{ width: 750 }} p='lg'>
-        <Container align='center'>
-          <Title size='h1' color="blue.5">Dialect Translator</Title>
-          <Text>Choose a CSV, input English text, and click 'Translate'.</Text>
-          <Text c='dimmed'>Col 1: English, col 2: Dialect, no headers.</Text>
+        <Container>
+          <Title align='center' size='h1' color="blue.5">Dialect Translator</Title>
+          <Text align='center'>Choose a CSV, input English text, and click 'Translate'.</Text>
+          <Text align='center' c='dimmed'>Col 1: English, col 2: Dialect, no headers.</Text>
         </Container>
         <Space />
         <Container style={{ height: 100 }}>
